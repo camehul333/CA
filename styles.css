@@ -3113,3 +3113,48 @@ textarea:focus {
         0 6px 20px rgba(20, 50, 75, 0.07) !important;
 }
 
+
+
+.utility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.utility-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 24px;
+  border: 1px solid #e2e5ea;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0b2238;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.utility-btn:hover {
+  background: #0b2238;
+  color: #ffffff;
+  border-color: #0b2238;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(11, 34, 56, 0.15);
+}
+
+@media (max-width: 900px) {
+  .utility-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .utility-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
